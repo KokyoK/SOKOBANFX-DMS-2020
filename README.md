@@ -1,6 +1,6 @@
 # README - SOKOBANFX
 
-- Author:  **yuting He 20124936 **
+- Author:  Yuting HE
 - Word count: 282
 - Table count: 2
 - Graph count: 11
