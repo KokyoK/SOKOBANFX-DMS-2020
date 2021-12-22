@@ -2,7 +2,7 @@
 
 
 TO PUBLIC:
-This is University of Nottingham Ningbo China Computer Science, Develop Maintainable Software courseword, completed in Dec 2020, made public in Dec, 2021.
+This is University of Nottingham Ningbo China Computer Science, Develop Maintainable Software coursework, completed in Dec 2020, made public in Dec, 2021.
 
 
 
