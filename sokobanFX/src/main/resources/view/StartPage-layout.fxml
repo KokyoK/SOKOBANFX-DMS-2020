@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+
+<SplitPane dividerPositions="0.7" prefHeight="763.0" prefWidth="907.0" stylesheets="@../style/Global-style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ae2dms.controller.StartPageController">
+   <items>
+      <Pane fx:id="Grid" prefHeight="600.0" prefWidth="600.0">
+         <children>
+
+            <MenuBar fx:id="menuBar" layoutX="-4.0" prefHeight="36.0" prefWidth="634.0" style="-fx-background-color: #f38181;">
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem disable="true" mnemonicParsing="false" text="Save Game" />
+                        <MenuItem mnemonicParsing="false" onAction="#loadGame" text="Load Game" />
+                        <MenuItem mnemonicParsing="false" onAction="#closeGame" text="Exit" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Level">
+                     <items>
+                        <MenuItem disable="true" mnemonicParsing="false" text="Undo" />
+                        <RadioMenuItem mnemonicParsing="false" onAction="#toggleMusic" text="Toggle Music" />
+                        <RadioMenuItem disable="true" mnemonicParsing="false" text="Toggle Debug" />
+                        <MenuItem disable="true" mnemonicParsing="false" text="Reset Level" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#showAbout" text="About" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <ImageView fx:id="bg" fitHeight="779.0" fitWidth="703.0" layoutX="-31.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@../image/startImg/start.jpeg" />
+               </image>
+            </ImageView>
+            <Button fx:id="newBtn" layoutX="46.0" layoutY="328.0" maxHeight="69.0" maxWidth="200.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#newGame" prefHeight="36.0" prefWidth="154.0" text="New Game" />
+            <Button fx:id="contBtn" layoutX="50.0" layoutY="398.0" maxHeight="69.0" maxWidth="200.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#contGame" prefHeight="37.0" prefWidth="154.0" text="Continue" />
+            <Button fx:id="entertain" layoutX="47.0" layoutY="464.0" maxHeight="97.0" maxWidth="387.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#entertainGame" prefHeight="40.0" prefWidth="387.0" style="-fx-background-color: #ea4e4e;" text="Entertain Game！（2 Players）" textFill="#eb4e4e" />
+            <ImageView fitHeight="223.0" fitWidth="456.0" layoutX="89.0" layoutY="524.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/startImg/keyIntro.jpg" />
+               </image>
+            </ImageView>
+
+         </children>
+      </Pane>
+      <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="289.0" prefWidth="273.0" styleClass="pane">
+         <children>
+            <ImageView fitHeight="1122.0" fitWidth="382.0" layoutX="-7.0" layoutY="-361.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/startImg/rightPane.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="themeChoice" layoutX="21.0" layoutY="216.0" mnemonicParsing="false" onAction="#showThemeChoice" prefHeight="36.0" prefWidth="228.0" text="Choose Theme" />
+            <Button fx:id="rankList" layoutX="24.0" layoutY="395.0" mnemonicParsing="false" onAction="#showRankingList" prefHeight="40.0" prefWidth="225.0" style="-fx-background-color: #0aa046;" text="Ranking List">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/startImg/rankIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="difficultyChoice" layoutX="22.0" layoutY="82.0" mnemonicParsing="false" onAction="#showDifficultyChoice" prefHeight="36.0" prefWidth="228.0" text="Choose Difficulty" />
+            <Button fx:id="tutorial" layoutX="23.0" layoutY="321.0" mnemonicParsing="false" onAction="#showTutorial" prefHeight="31.0" prefWidth="222.0" style="-fx-background-color: #fa983a;" text="Tutorial">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/startImg/tutorialIcone.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label layoutX="76.0" layoutY="13.0" text="Difficulty" />
+            <Label layoutX="81.0" layoutY="147.0" text="Theme" />
+            <Label fx:id="difficultyText" layoutX="17.0" layoutY="41.0" prefHeight="28.0" prefWidth="158.0" stylesheets="@../style/Emphasis-style.css" text="Label" />
+            <Label fx:id="themeText" layoutX="17.0" layoutY="173.0" prefHeight="28.0" prefWidth="233.0" style="-fx-border-radius: 5;" stylesheets="@../style/Emphasis-style.css" text="Label" />
+            <Line endX="246.789306640625" layoutX="43.0" layoutY="134.0" startX="-44.02947998046875" stroke="#f28383" strokeWidth="5.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Line>
+            <Line endX="246.789306640625" layoutX="44.0" layoutY="271.0" startX="-44.02947998046875" stroke="#f28383" strokeWidth="5.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Line>
+
+         </children>
+      </Pane>
+   </items>
+   <effect>
+      <Glow />
+   </effect>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</SplitPane>

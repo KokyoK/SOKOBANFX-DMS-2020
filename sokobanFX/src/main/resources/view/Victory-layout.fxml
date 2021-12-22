@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="234.0" prefWidth="694.0" style="-fx-background-color: #e8b4ab;" stylesheets="@../style/Global-style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ae2dms.controller.VictoryController">
+   <children>
+      <Button fx:id="okBtn" layoutX="325.0" layoutY="184.0" mnemonicParsing="false" onAction="#clickOK" prefHeight="36.0" prefWidth="108.0" text="OK" />
+      <Label fx:id="vicMsg" layoutX="19.0" layoutY="35.0" prefHeight="33.0" prefWidth="637.0" stylesheets="@../style/Global-style.css" text="labels">
+         <font>
+            <Font name="Skia" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="68.0" prefHeight="33.0" prefWidth="282.0" text="Enter your nickname:">
+         <font>
+            <Font name="Skia" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameField" layoutX="253.0" layoutY="139.0" prefHeight="36.0" prefWidth="252.0" promptText="player" />
+      <Label fx:id="alertMsg" layoutX="158.0" layoutY="103.0" prefHeight="28.0" prefWidth="470.0" textFill="#e15050">
+         <font>
+            <Font size="8.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

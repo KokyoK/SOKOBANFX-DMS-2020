@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="539.0" prefWidth="654.0" style="-fx-background-color: #e8b4ab;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ae2dms.controller.AboutGameController">
+   <children>
+      <Button fx:id="btn" layoutX="281.0" layoutY="476.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="36.0" prefWidth="110.0" stylesheets="@../style/AboutGame-style.css" text="OK">
+         <font>
+            <Font name="Chalkduster" size="18.0" />
+         </font></Button>
+      <Label fx:id="text" layoutX="180.0" layoutY="62.0" prefHeight="48.0" prefWidth="311.0" text="Author： YutingHe 20124936" textFill="WHITE">
+         <font>
+            <Font name="Chalkduster" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="text1" layoutX="172.0" layoutY="14.0" prefHeight="48.0" prefWidth="311.0" text="About SOKOBANFX" textFill="WHITE">
+         <font>
+            <Font name="Chalkduster" size="28.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="36.0" layoutY="110.0" prefHeight="346.0" prefWidth="578.0" style="-fx-background-color: #efefef;">
+         <content>
+            <AnchorPane prefHeight="343.0" prefWidth="576.0">
+               <children>
+                  <Text layoutX="17.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This game contains 2 type. Normal type is just for one player, and entertain type allow two players to play together. Note that the entertaining mode (for two players) only accept the map set named &quot;Entertain.skb&quot;. If you want to play with your own file with entertaining type, you should rename it, and the system will automatically recognize the type.The game also contains 2 mode. Normal Mode is that the walls are all visible. The Hell Mode is that player cannot see the wall from the beginning of the game, unless the player(s) crash onto it. The Wall will blink and show temporarily.The player is allowed to choose theme and difficulty at the beginning of the game. After finishing one map, they should enter the name and it will be later output on the screen." wrappingWidth="543.77587890625">
+                     <font>
+                        <Font name="Heiti TC Light" size="22.0" />
+                     </font></Text>
+               </children>
+            </AnchorPane>
+         </content></ScrollPane>
+      <ImageView fitHeight="48.0" fitWidth="59.0" layoutX="447.0" layoutY="56.0" opacity="0.81" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/startImg/aboutbg.jpg" />
+         </image>
+      </ImageView>
+   </children>
+
+</AnchorPane>

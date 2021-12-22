@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e8b4ab;" stylesheets="@../style/Global-style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ae2dms.controller.DifficultyChoiceController">
+    <children>
+        <Label layoutX="186.0" layoutY="40.0" text=" Choose difficulty">
+            <font>
+                <Font name="Chalkduster" size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="okBtn" layoutX="219.0" layoutY="339.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="36.0" prefWidth="143.0" text=" OK! " />
+        <RadioButton fx:id="radioSimple" layoutX="59.0" layoutY="262.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="102.0" text="simple">
+         <toggleGroup>
+            <ToggleGroup fx:id="difficulty" />
+         </toggleGroup>
+         <font>
+            <Font name="Chalkduster" size="18.0" />
+         </font>
+        </RadioButton>
+        <RadioButton fx:id="radioMedium" layoutX="250.0" layoutY="262.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="124.0" stylesheets="@../style/Global-style.css" text="medium" toggleGroup="$difficulty">
+         <font>
+            <Font name="Chalkduster" size="18.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="radioHard" layoutX="450.0" layoutY="261.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="108.0" text="hard" toggleGroup="$difficulty">
+         <font>
+            <Font name="Chalkduster" size="18.0" />
+         </font></RadioButton>
+        <ImageView fx:id="simpleIv" fitHeight="107.0" fitWidth="124.0" layoutX="36.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="mediumIv" fitHeight="119.0" fitWidth="124.0" layoutX="238.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="hardIv" fitHeight="91.0" fitWidth="124.0" layoutX="427.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true" />
+
+
+    </children>
+</AnchorPane>

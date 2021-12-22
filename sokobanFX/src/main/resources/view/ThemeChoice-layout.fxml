@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e8b4ab;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ae2dms.controller.ThemeChoiceController">
+   <children>
+      <Label layoutX="182.0" layoutY="41.0" text=" Choose a Theme" textFill="#f2f0f0">
+         <font>
+            <Font name="Chalkduster" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="133.0" fitWidth="230.0" layoutX="67.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/theme-crayon/theme-crayon.png" />
+         </image></ImageView>
+      
+      <ImageView fitHeight="133.0" fitWidth="186.0" layoutX="345.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/theme-simple/theme-simple.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="okBtn" layoutX="245.0" layoutY="331.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="35.0" prefWidth="120.0" text=" OK! ">
+         <stylesheets>
+            <URL value="@../style/Global-style.css" />
+            <URL value="@../style/StartPage-style.css" />
+         </stylesheets></Button>
+         <RadioButton fx:id="radioCrayon" layoutX="69.0" layoutY="282.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="182.0" text="theme-crayon">
+         <toggleGroup>
+               <ToggleGroup fx:id="theme" />
+            </toggleGroup>
+         <font>
+            <Font name="Chalkduster" size="16.0" />
+         </font>
+         </RadioButton>
+         <RadioButton fx:id="radioSimple" layoutX="359.0" layoutY="275.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="162.0" text="theme-simple" toggleGroup="$theme">
+         <font>
+            <Font name="Chalkduster" size="16.0" />
+         </font></RadioButton>
+
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+*Button {
+    -fx-background-color: #f38181;
+    -fx-font-size: 13pt;
+    -fx-text-fill: #eeebeb;
+    -fx-font-family: Chalkduster;
+    -fx-background-radius: 7;
+}
+
+.button {
+    -fx-background-color: #f38181;
+    -fx-font-size: 13pt;
+    -fx-text-fill: #eeebeb;
+    -fx-background-radius: 7;
+}
+
+
+.RadioButton{
+ -fx-font-size: 18pt;
+
+}
+*Label {
+    -fx-font-size: 11pt;
+    -fx-text-fill: #e7e7e7;
+    -fx-font-family: Chalkduster;
+}
+
+*Menu{
+    -fx-font-size: 15pt;
+    -fx-text-fill: #e7e7e7;
+    -fx-font-family: Chalkduster;
+}
+
+*TextField{
+  -fx-font-size: 13pt;
+    -fx-text-fill: #828282;
+    -fx-font-family: Chalkduster;
+}
+

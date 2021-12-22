@@ -1,0 +1,17 @@
+.button {
+    -fx-background-color: #f38181;
+    -fx-font-size: 13pt;
+    -fx-text-fill: #eeebeb;
+    -fx-background-radius: 7;
+}
+
+/*
+.label {
+    -fx-text-fill: #FFFFFF;
+}
+*/
+
+
+.pane {
+    -fx-background-color: #eeebeb;
+}

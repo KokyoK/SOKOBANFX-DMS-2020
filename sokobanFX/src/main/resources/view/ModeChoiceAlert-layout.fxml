@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="307.0" prefWidth="661.0" style="-fx-background-color: #e8b4ab;" stylesheets="@../style/Global-style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ae2dms.controller.ModeChoiceAlertController">
+   <children>
+      <Button fx:id="normal" layoutX="138.0" layoutY="118.0" mnemonicParsing="false" onAction="#setNormalMode" prefHeight="36.0" prefWidth="168.0" stylesheets="@../style/Global-style.css" text="Normal mode">
+         <font>
+            <Font name="Chalkduster" size="18.0" />
+         </font></Button>
+      <Label fx:id="text" layoutX="182.0" layoutY="29.0" prefHeight="48.0" prefWidth="275.0" stylesheets="@../style/Global-style.css" text="Which mode to play?">
+         <font>
+            <Font name="Chalkduster" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="hell" layoutX="362.0" layoutY="118.0" mnemonicParsing="false" onAction="#setHellMode" prefHeight="36.0" prefWidth="190.0" stylesheets="@../style/Global-style.css" text="Hell mode">
+         <font>
+            <Font name="Chalkduster" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="39.0" layoutY="195.0" prefHeight="28.0" prefWidth="498.0" text="Tips: Hell mode has air wall!" textFill="#511111" />
+      <Label layoutX="25.0" layoutY="241.0" text="Only when you crash onto the wall can you see them" />
+   </children>
+
+</AnchorPane>
