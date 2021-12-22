@@ -1,6 +1,13 @@
 # README - SOKOBANFX
 
-- Author:  Yuting HE
+
+TO PUBLIC:
+This is University of Nottingham Ningbo China Computer Science, Develop Maintainable Software courseword, completed in Dec 2020, made public in Dec, 2021.
+
+
+
+
+
 - Word count: 282
 - Table count: 2
 - Graph count: 11
